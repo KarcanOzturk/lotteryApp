@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sayisal loto oyunu</h1>
+    <p>Asagidaki inputlara tahminleri giriniz</p>
+
+    <form onsubmit="tahminGir(event)">
+      <input type="number" name="sayi1" id="sayi1" />
+      <input type="number" name="sayi2" id="sayi2" />
+      <input type="number" name="sayi3" id="sayi3" />
+      <input type="number" name="sayi4" id="sayi4" />
+      <input type="number" name="sayi5" id="sayi5" />
+      <input type="number" name="sayi6" id="sayi6" />
+      <input type="submit" value="tahmin gir" id="tahminGirBtn" />
+    </form>
+    <hr />
+    <button disabled id="kuraCekBtn" type="button">Kurayi cek</button>
+
+    <p>loto sayilari</p>
+    <br />
+
+    <form id="kuraSonuclari">
+      <input type="number" name="kuraSayi1" id="kuraSayi1" disabled />
+      <input type="number" name="kuraSayi2" id="kuraSayi2" disabled />
+      <input type="number" name="kuraSayi3" id="kuraSayi3" disabled />
+      <input type="number" name="kuraSayi4" id="kuraSayi4" disabled />
+      <input type="number" name="kuraSayi5" id="kuraSayi5" disabled />
+      <input type="number" name="kuraSayi6" id="kuraSayi6" disabled />
+    </form>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
